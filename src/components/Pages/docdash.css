@@ -1,0 +1,14 @@
+.docform{
+    margin-top: 10%;
+
+}
+
+.docpage{
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.docpage h1{
+    text-align: center;
+}

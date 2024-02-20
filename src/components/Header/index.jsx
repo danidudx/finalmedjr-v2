@@ -47,31 +47,12 @@ export default function Header({ logoSrc, variant }) {
                   >
                     <li className="menu-item-has-children">
                       <Link to="/">Home</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link to="/">Home Version-1</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v2">Home Version-2</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v3">Home Version-3</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v4">Home Version-4</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v5">Home Version-5</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
                     </li>
                     <li>
                       <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <Link to="/doctors">Find Doctor</Link>
+                      <Link to="/docs">Find Doctor</Link>
                     </li>
                     <li>
                       <Link to="/blogpage">Blog</Link>
@@ -80,34 +61,32 @@ export default function Header({ logoSrc, variant }) {
                       <Link to="/">Pages</Link>
                       <DropDown>
                         <ul>
-                          <li>
+                          {/* <li>
                             <Link to="/appointments">Appointments</Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <Link to="/departments">Departments</Link>
                           </li>
-                          <li>
-                            <Link to="/departments/department-details">
+                          <li> */}
+                            {/* <Link to="/departments/department-details">
                               Department Details
                             </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctors">Doctors</Link>
+                          </li> */}
+                          {/* <li> */}
+                            {/* <Link to="/doctors">Doctors</Link>
                           </li>
                           <li>
                             <Link to="doctors/doctor-details">
                               Doctor Details
                             </Link>
                           </li>
-                          <li>
-                            <Link to="/pricing-plan">Pricing Plan</Link>
-                          </li>
+                         
                           <li>
                             <Link to="/gallery">Gallery</Link>
                           </li>
                           <li>
                             <Link to="/timetable">Timetable</Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link to="/login">login</Link>
                           </li>
@@ -119,6 +98,12 @@ export default function Header({ logoSrc, variant }) {
                           </li>
                           <li>
                             <Link to="/blogdashboard">Blog Dashboard</Link>
+                          </li>
+                          <li>
+                            <Link to="/game">Game</Link>
+                          </li>
+                          <li>
+                            <Link to="/doctorsdash">doctor</Link>
                           </li>
                         </ul>
                       </DropDown>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './individualBlogPage.css';
 
 const IndividualBlogPage = () => {
   const [blog, setBlog] = useState(null);
@@ -29,8 +30,10 @@ const IndividualBlogPage = () => {
       {blog ? (
         <div className="blog-det">
           <h2>{blog.title}</h2>
-          <p>{blog.content}</p>
           <img src={imgUrl} alt={blog.title} />
+          
+          <p>{blog.content}</p>
+          
         </div>
       ) : (
         <p>Loading...</p>

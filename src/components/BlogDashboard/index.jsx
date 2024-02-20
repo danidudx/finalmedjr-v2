@@ -29,34 +29,47 @@ export default function BlogForm() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-  
+
     const formDataWithImage = new FormData();
     formDataWithImage.append('title', formData.title);
     formDataWithImage.append('content', formData.content);
     formDataWithImage.append('date', formData.date);
-    formDataWithImage.append('thumbnail', imageFile); // Append the File object
-  
+    formDataWithImage.append('thumbnail', imageFile);
+
     axios
       .post('http://localhost:8080/blogs/add', formDataWithImage)
-      .then((res) => console.log(res.data))
-      .catch((error) => console.error('Error:', error));
+      .then((res) => {
+        console.log(res.data);
+        alert('Blog posted successfully!');
+        // Clear form fields
+        setFormData({
+          title: '',
+          content: '',
+          date: '',
+          thumbnail: '',
+        });
+        // Clear file input
+        setImageFile(null);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('Error posting blog. Please try again.');
+      });
   };
-  
+
   return (
     <form onSubmit={onSubmit}>
-      <label>
-        Title:
-        <input type="text" name="title" value={formData.title} onChange={handleChange} />
-      </label>
-      <label>
-        Content:
-        <textarea
-          name="content"
-          value={formData.content}
-          onChange={handleChange}
-          rows={10} // Set the number of rows to determine the initial height
-        ></textarea>
-      </label>
+      <label>Title:</label><br></br>
+      <input type="text" name="title" value={formData.title} onChange={handleChange} />
+      <br></br>
+      <label>Content:</label><br></br>
+      <textarea
+        name="content"
+        value={formData.content}
+        onChange={handleChange}
+        rows={10}
+      ></textarea>
+      <br></br>
       <label>
         Date:
         <DatePicker selected={formData.date} onChange={(date) => setFormData({ ...formData, date })} />

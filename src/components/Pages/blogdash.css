@@ -1,0 +1,14 @@
+.bform{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.BlogDashPage{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+}
+
+.bform h1{
+    text-align: center;
+}

@@ -19,11 +19,13 @@ app.use('/uploads', express.static('uploads'));
 
 const appointmentsRouter = require('./routes/appointments');
 const blogsRouter = require('./routes/blogs');
+const doctorsRouter = require('./routes/doctors');
 
 // routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use('/appointments',appointmentsRouter);
 app.use('/blogs',blogsRouter);
+app.use('/doctorsdash',doctorsRouter);
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

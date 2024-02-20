@@ -11,9 +11,10 @@ const BlogCard = ({ blog }) => {
   return (
     <div className="blog-card">
       <h2>{blog.title}</h2>
-      <p>{blog.content.substring(0, 150)}...</p>
+      
       {/* <img src={blog.thumbnail.replace(/\\/g, '/')} alt={blog.title} /> */}
       <img src={imgUrl} alt={blog.title} />
+      <p>{blog.content.substring(0, 150)}...</p>
       {/* <img src='imageoftest.jpg' /> */}
       <a href={`/blog/${blog._id}`}>Read more</a>
     </div>

@@ -32,6 +32,11 @@ import BlogForm from './components/BlogDashboard';
 import BlogsPage from './components/Pages/BlogsPage';
 import BlogDetail from './components/BlogDetail';
 import IndividualBlogPage from './components/Pages/IndividualBlogPage'
+import Game from './components/game';
+import DoctorForm from './components/DoctorDashboard';
+import BlogDashPage from './components/Pages/BlogDashPage';
+import DocDashPage from './components/Pages/DocDashPage';
+import AllDocPage from './components/Pages/AllDocPage';
 
 function App() {
   const { pathname } = useLocation();
@@ -76,8 +81,11 @@ function App() {
       <Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
       <Route path="/imageid" exact element={<TeachableMachineModel />} />
-      <Route path="/blogdashboard" exact element={<BlogForm />} />
+      <Route path="/blogdashboard" exact element={<BlogDashPage />} />
       <Route path="/blogpage" exact element={<BlogsPage />} />
+      <Route path="/game" exact element={<Game />} />
+      <Route path="/doctorsdash" exact element={<DocDashPage />} />
+      <Route path="/docs" exact element={<AllDocPage />} />
 			{/* <Route path="/" element={<Navigate replace to="/login" />}/> */}
     </Routes>
   );

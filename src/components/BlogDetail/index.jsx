@@ -5,9 +5,10 @@ const BlogDetail = ({ blog }) => {
 
   return (
     <div className="blog-detail">
+      <img src={imgUrl} alt={blog.title} />
       <h2>{blog.title}</h2>
       <p>{blog.content}</p>
-      <img src={imgUrl} alt={blog.title} />
+      
       <p>Date: {new Date(blog.date).toLocaleDateString()}</p>
     </div>
   );

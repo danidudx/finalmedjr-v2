@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import BlogCard from '../BlogCard/index';
 import './BlogsPage.css';
+import BannerSectionStyle3 from '../Section/BannerSection/BannerSectionStyle3';
+import Header from '../Header';
 const BlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
 
@@ -15,7 +17,13 @@ const BlogsPage = () => {
 
   return (
     <div className="blogs-page">
-      <h1>All Blogs</h1>
+      <Header />
+      <BannerSectionStyle3
+        bgUrl="/images/about/banner_bg.svg"
+        imgUrl="/images/about/banner_img.png"
+        title="Improve your knowledge<br> and Health"
+        subTitle="Your Partner in Health and Wellness"
+      />
       <div className="blog-cards">
         {blogs.map((blog) => (
           <BlogCard key={blog._id} blog={blog} />
