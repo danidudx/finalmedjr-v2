@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './game.css';
+import Header from '../Header';
 
 const cardsData = [
   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
@@ -55,7 +56,7 @@ const Game = () => {
 
     return (
       <div
-        className={`card ${isFlipped ? 'flipped' : ''}`}
+        className={`cardde ${isFlipped ? 'flipped' : ''}`}
         key={index}
         onClick={() => handleCardClick(index)}
       >
@@ -97,8 +98,12 @@ const Game = () => {
   };
 
   return (
-    <div className="App">
-      <h1>Memory Card Game</h1>
+    <div className='gamebody'>
+      <Header />
+      <br></br>
+    <div className="Game"><div className='textwrap'><h2>Play a Game!<br></br>Release you Stress </h2>
+    <p>Find blocks with similar letter! and Level Up</p></div>
+      <h1>Memory Reboot</h1>
       {congratulations ? (
         <div>
           <p>Congratulations! You completed Level {level}!</p>
@@ -114,7 +119,7 @@ const Game = () => {
           </div>
         </div>
       )}
-    </div>
+    </div></div>
   );
 };
 

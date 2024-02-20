@@ -48,17 +48,21 @@ export default function Header({ logoSrc, variant }) {
                     <li className="menu-item-has-children">
                       <Link to="/">Home</Link>
                     </li>
-                    <li>
-                      <Link to="/about">About</Link>
-                    </li>
+                    
                     <li>
                       <Link to="/docs">Find Doctor</Link>
                     </li>
                     <li>
                       <Link to="/blogpage">Blog</Link>
                     </li>
+                    <li>
+                            <Link to="/imageid">Skin Care AI</Link>
+                          </li>
+                          <li>
+                            <Link to="/game">Game</Link>
+                          </li>
                     <li className="menu-item-has-children">
-                      <Link to="/">Pages</Link>
+                      <Link to="/">Other</Link>
                       <DropDown>
                         <ul>
                           {/* <li>
@@ -88,29 +92,29 @@ export default function Header({ logoSrc, variant }) {
                             <Link to="/timetable">Timetable</Link>
                           </li> */}
                           <li>
+                      <Link to="/about">About</Link>
+                    </li>
+                          <li>
                             <Link to="/login">login</Link>
                           </li>
                           <li>
                             <Link to="/signup">signup</Link>
                           </li>
-                          <li>
-                            <Link to="/imageid">ImageID</Link>
-                          </li>
+                          
                           <li>
                             <Link to="/blogdashboard">Blog Dashboard</Link>
                           </li>
-                          <li>
-                            <Link to="/game">Game</Link>
-                          </li>
+                         
                           <li>
                             <Link to="/doctorsdash">doctor</Link>
                           </li>
+                          <li>
+                      <Link to="/contact">Contact</Link>
+                    </li>
                         </ul>
                       </DropDown>
                     </li>
-                    <li>
-                      <Link to="/contact">Contact</Link>
-                    </li>
+                    
                   </ul>
                   <span
                     className={

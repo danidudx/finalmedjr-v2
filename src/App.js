@@ -37,6 +37,7 @@ import DoctorForm from './components/DoctorDashboard';
 import BlogDashPage from './components/Pages/BlogDashPage';
 import DocDashPage from './components/Pages/DocDashPage';
 import AllDocPage from './components/Pages/AllDocPage';
+import ImgIdentification from './components/Pages/ImgIdentification';
 
 function App() {
   const { pathname } = useLocation();
@@ -80,7 +81,7 @@ function App() {
       <Route path="*" element={<ErrorPage />} />
       <Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
-      <Route path="/imageid" exact element={<TeachableMachineModel />} />
+      <Route path="/imageid" exact element={<ImgIdentification />} />
       <Route path="/blogdashboard" exact element={<BlogDashPage />} />
       <Route path="/blogpage" exact element={<BlogsPage />} />
       <Route path="/game" exact element={<Game />} />

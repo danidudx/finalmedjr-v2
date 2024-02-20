@@ -1,8 +1,42 @@
-img
+.imagecontainer img
 {
-  max-width: 100px;
+  max-width: 200px;
+  height: auto;
 }
 
 .imagecontainer{
+  margin-left: 42%;
     max-width: 100px;
+  margin-top: 10%;
+}
+
+#label-container > div.highlight {
+  font-size: 20px;
+  background-color: rgba(255, 255, 0, 0); /* You can adjust the highlight style */
+  font-weight: bold;
+}
+
+div#label-container{
+  text-align: center;
+  
+}
+
+.labelwrap{
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 20px;
+
+}
+
+.result-message{
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 50px;
+  padding: 20px;
+  border: solid black;
+  font-size: 25px;
+  background-color: rgb(88, 156, 214);
+  color: aliceblue;
+
 }
