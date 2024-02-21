@@ -45,33 +45,27 @@ const departmentData = [
 ];
 const testimonialData = [
   {
-    text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+    text: 'eynolds thoroughness and expertise made me feel reassured throughout my treatment journey. Highly recommend her for skin health concerns',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_1/avatar_2.png',
-    avatarName: 'PAULO HUBERT',
+    avatarImgUrl: '/images/home_4/avatar_2.png',
+    avatarName: 'Michael K.',
     avatarDesignation: 'New York, USA',
   },
   {
-    text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-    ratingNumber: '4.5',
-    avatarImgUrl: '/images/home_1/avatar_2.png',
-    avatarName: 'PAULO HUBERT',
-    avatarDesignation: 'New York, USA',
-  },
-  {
-    text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+    text: '"Alex is innovative solutions and attention to detail greatly improved the website is functionality. Exceptional work ethic and communication skills',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_1/avatar_2.png',
-    avatarName: 'PAULO HUBERT',
-    avatarDesignation: 'New York, USA',
+    avatarImgUrl: '/images/home_4/avatar_3.png',
+    avatarName: 'Emma L.',
+    avatarDesignation: 'Manhattan, USA',
   },
   {
-    text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-    ratingNumber: '4.5',
-    avatarImgUrl: '/images/home_1/avatar_2.png',
-    avatarName: 'PAULO HUBERT',
-    avatarDesignation: 'New York, USA',
+    text: '“Rachel is patience and professionalism in addressing my queries exceeded my expectations. Her assistance made navigating the platform a breeze”',
+    ratingNumber: '5',
+    avatarImgUrl: '/images/home_4/avatar_4.png',
+    avatarName: ' David S.',
+    avatarDesignation: 'California, USA',
   },
+ 
 ];
 const workingProcessData = [
   {

@@ -12,38 +12,41 @@ import FaqSection from '../Section/FaqSection';
 import AwardSection from '../Section/AwardSection';
 import DepartmentSection from '../Section/DepartmentSection';
 import { pageTitle } from '../../helpers/PageTitle';
+import './home.css';
+
 const featureListData = [
   {
     iconSrc: '/images/home_1/compassion.svg',
-    title: 'Compassion',
+    title: ' Skin Health Assessment',
     subTitle:
-      'We understand that seeking medical care can be a stressful and emotional experience, and we strive to create a welcoming and supportive environment that puts our patients at ease and every one.',
+      'Upload images, receive accurate skin disease detection, and connect with relevant specialists for personalized care and treatment.',
   },
   {
     iconSrc: '/images/home_1/excellence.svg',
-    title: 'Excellence',
+    title: 'Stress Relief Games',
     subTitle:
-      'We are committed to providing excellent medical care and services to our patients. We believe in continuously improving our skills, knowledge, and resources to ensure that we deliver the highest quality care possible.',
+      'Engage in immersive games designed to alleviate stress, promote relaxation, and enhance mental well-being for a healthier lifestyle.',
   },
   {
     iconSrc: '/images/home_1/integrity.svg',
-    title: 'Integrity',
-    subTitle: `We believe in practicing medicine with integrity and honesty. We are transparent in our communication and decision-making processes, and we always put our patient's interests first & provide best solution.`,
+    title: ' Chatbot Support',
+    subTitle: 'Access our ChatGPT-powered chatbot for friendly conversations, stress relief tips, and emotional support whenever you need it, 24/7.',
   },
+
   {
     iconSrc: '/images/home_1/respect.svg',
-    title: 'Respect',
+    title: 'Expert Blogs & Insights',
     subTitle:
-      'We treat all individuals with respect and dignity, regardless of their background, beliefs, or circumstances. We believe that every person deserves to be treated with compassion and kindness.',
+      'Explore our comprehensive collection of blogs offering expert insights, health tips, and actionable advice for holistic well-being and self-care.',
   },
   {
     iconSrc: '/images/home_1/teamwork.svg',
-    title: 'Teamwork',
+    title: 'Doctor Directory',
     subTitle:
-      'We believe in working collaboratively with our team membersvand other healthcare professionals to provide comprehensive and effective care to our patients.',
+      'Find and connect with trusted healthcare professionals specializing in various skin conditions, ensuring personalized care and treatment plans for you.',
   },
 ];
-const brandData = [
+/*const brandData = [
   { imgUrl: 'images/brand_1.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_2.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_3.png', imgAlt: 'Brand' },
@@ -52,32 +55,32 @@ const brandData = [
   { imgUrl: 'images/brand_6.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_7.png', imgAlt: 'Brand' },
   { imgUrl: 'images/brand_8.png', imgAlt: 'Brand' },
-];
+];*/
 const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: 'How accurate is the skin disease detection feature?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      ' Our advanced image recognition technology ensures high accuracy in identifying various skin conditions, backed by thorough algorithms and expert validation.',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: ' Can I trust the recommendations for doctors provided on the website?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Absolutely! We carefully curate our database of healthcare professionals, ensuring they are qualified specialists with expertise in treating specific skin conditions.',
   },
   {
-    title: 'Do you accept insurance?',
+    title: 'Are the stress relief games effective?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Yes, our stress relief games are designed based on psychological principles to promote relaxation and reduce stress levels effectively, providing a fun and therapeutic experience.',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: 'How can I access the chatbot for stress relief?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Simply navigate to the chatbot section on our website or app, and you can start interacting with our ChatGPT-powered chatbot instantly, anytime you need support or a friendly conversation.',
   },
   {
-    title: 'How do I request a prescription refill?',
+    title: 'Can I contribute to the blog section?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'We welcome contributions from health experts, bloggers, and individuals passionate about promoting wellness. Please reach out to us to discuss potential collaboration opportunities.',
   },
 ];
 const blogData = [
@@ -86,7 +89,7 @@ const blogData = [
     thumbUrl: 'images/home_1/post_1.jpeg',
     date: 'May 1, 2023',
     btnText: 'Learn More',
-    href: '/blog/blog-details',
+    href: '/blogpage',
     socialShare: true,
   },
   {
@@ -94,7 +97,7 @@ const blogData = [
     thumbUrl: 'images/home_1/post_2.jpeg',
     date: 'May 4, 2023',
     btnText: 'Learn More',
-    href: '/blog/blog-details',
+    href: '/blogpage',
     socialShare: true,
   },
   {
@@ -102,99 +105,31 @@ const blogData = [
     thumbUrl: 'images/home_1/post_3.jpeg',
     date: 'May 1, 2023',
     btnText: 'Learn More',
-    href: '/blog/blog-details',
+    href: '/blogpage',
     socialShare: true,
   },
 ];
-const awardData = [
-  {
-    title: 'Malcolm Baldrige National Quality Award',
-    subTitle:
-      'This award recognizes healthcare organizations that have demonstrated excellence in leadership, strategic planning, customer and employee satisfaction, and operational efficiency.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'HIMSS Davies Award',
-    subTitle:
-      'This award recognizes healthcare organizations that have used health information technology to improve patient outcomes and reduce costs.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'Healthgrades National’s Best Hospital',
-    subTitle:
-      'This recognition is given to hospitals that have achieved high ratings for clinical quality and patient safety across multiple specialties and procedures.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'Joint Commission Gold Seal of Approval',
-    subTitle:
-      'This recognition is given to hospitals that have met rigorous standards for patient safety and quality of care.',
-    iconUrl: 'images/icons/award.svg',
-  },
-];
-const departmentData = [
-  {
-    title: 'Emergency Department',
-    iconUrl: 'images/home_1/department_icon_1.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Pediatric Departement',
-    iconUrl: 'images/home_1/department_icon_2.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Gynecology Department',
-    iconUrl: 'images/home_1/department_icon_3.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Cardiology Department',
-    iconUrl: 'images/home_1/department_icon_4.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Neurology Department',
-    iconUrl: 'images/home_1/department_icon_5.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Psychiatry Department',
-    iconUrl: 'images/home_1/department_icon_6.svg',
-    href: '/departments/department-details',
-  },
-];
+
+
 
 export default function Home() {
   pageTitle('Home');
   return (
     <>
       <Hero
-        title="Your Partner in Health and Wellness"
-        subTitle="We are committed to providing you with the best medical and healthcare services to help you live healthier and happier."
+        title="Empowering Wellness Explore, Connect, Thrive"
+        subTitle=" Your Gateway to Health. Discover skin conditions, connect with specialists, destress with games, and explore insightful blogs for holistic well-being. Download our app now!"
         bgUrl="/images/home_1/hero_bg.jpeg"
         imgUrl="/images/home_1/hero_img.png"
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         infoList={[
           {
-            title: 'Hotline',
-            subTitle: '123-456-7890',
-            iconUrl: '/images/contact/icon_1.svg',
-          },
-          {
-            title: 'Ambulance',
-            subTitle: '876-256-876',
-            iconUrl: '/images/icons/ambulance.svg',
-          },
-          {
-            title: 'Location',
-            subTitle: 'New York, US',
-            iconUrl: '/images/icons/pin.svg',
+            bgUrl: "images/home_1/cta_bg.svg"
           },
         ]}
-        btnText="Book Now"
-        btnUrl="/appointments"
+        btnText="Read More"
+        btnUrl="/about"
       />
       {/* Start Feature Section */}
       <Section
@@ -205,7 +140,7 @@ export default function Home() {
         bottomLg={140}
         bottomXl={100}
       >
-        <FeaturesSection sectionTitle="Our Values" data={featureListData} />
+        <FeaturesSection sectionTitle="Our Features" data={featureListData} />
       </Section>
       {/* End Feature Section */}
       {/* Start About Section */}
@@ -214,32 +149,24 @@ export default function Home() {
           imgUrl="/images/home_1/about.png"
           spiningImgUrl="/images/home_1/about_mini.svg"
           title="About Us"
-          subTitle="PRO HEALTH"
+          subTitle="ProHealth"
           featureList={[
             {
               featureListTitle:
-                'ProHealth is a team of experienced medical professionals',
+                'Our Vision and Values',
               featureListSubTitle:
-                'Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms.',
+                ' our mission is to revolutionize healthcare accessibility, empowering individuals to take charge of their well-being through innovative technology, expert guidance, and compassionate support.',
             },
           ]}
         />
       </Section>
       {/* End About Section */}
       {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={110}>
-        <DepartmentSection
-          sectionTitle="Departments"
-          bgUrl="images/home_1/department_bg.svg"
-          data={departmentData}
-        />
-      </Section>
+     
 
       {/* End Departments Section */}
       {/* Start Award Section */}
-      <Section topMd={185} topLg={140} topXl={100}>
-        <AwardSection sectionTitle="Departments" data={awardData} />
-      </Section>
+     
       {/* End Award Section */}
       {/* Start Testimonial */}
       <Section
@@ -262,7 +189,7 @@ export default function Home() {
           bgUrl="images/home_1/cta_bg.svg"
           imgUrl="images/home_1/cta_img.png"
           title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced medical professionals today!"
+          subTitle="Prioritize your well-being with MedJR where health meets convenience and empowerment."
         />
       </Section>
       {/* End Banner Section */}
@@ -276,13 +203,7 @@ export default function Home() {
       </Section>
       {/* End Blog Section */}
       {/* Start Appointment Section */}
-      <Section topMd={190} topLg={145} topXl={105} id="appointment">
-        <AppointmentSection
-          sectionTitle="Appointment"
-          sectionTitleUp="BOOK AN"
-          imgUrl="/images/home_1/appointment.jpeg"
-        />
-      </Section>
+     
       {/* End Appointment Section */}
       {/* Start FAQ Section */}
       <Section topMd={190} topLg={145} topXl={105}>
@@ -294,7 +215,7 @@ export default function Home() {
       </Section>
       {/* End FAQ Section */}
       {/* Start Brand Section */}
-      <Section
+      {/*<Section
         topMd={200}
         topLg={150}
         topXl={110}
@@ -303,7 +224,7 @@ export default function Home() {
         bottomXl={110}
       >
         <BrandsSection data={brandData} />
-      </Section>
+      </Section>*/}
       {/* End Brand Section */}
     </>
   );

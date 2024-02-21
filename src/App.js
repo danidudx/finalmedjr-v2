@@ -38,6 +38,7 @@ import BlogDashPage from './components/Pages/BlogDashPage';
 import DocDashPage from './components/Pages/DocDashPage';
 import AllDocPage from './components/Pages/AllDocPage';
 import ImgIdentification from './components/Pages/ImgIdentification';
+import Chatbot from './components/Pages/chatbot';
 
 function App() {
   const { pathname } = useLocation();
@@ -87,6 +88,7 @@ function App() {
       <Route path="/game" exact element={<Game />} />
       <Route path="/doctorsdash" exact element={<DocDashPage />} />
       <Route path="/docs" exact element={<AllDocPage />} />
+      <Route path="/chatbot" exact element={<Chatbot />} />
 			{/* <Route path="/" element={<Navigate replace to="/login" />}/> */}
     </Routes>
   );

@@ -5,6 +5,7 @@ import SocialWidget from '../Widget/SocialWidget';
 import Newsletter from '../Widget/Newsletter';
 import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
 import Spacing from '../Spacing';
+import './head.css';
 
 export default function Header({ logoSrc, variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -61,10 +62,13 @@ export default function Header({ logoSrc, variant }) {
                           <li>
                             <Link to="/game">Game</Link>
                           </li>
-                    <li className="menu-item-has-children">
+                          <li>
+                            <Link to="/chatbot">chatbot</Link>
+                          </li></ul>
+                    {/* <li className="menu-item-has-children">
                       <Link to="/">Other</Link>
                       <DropDown>
-                        <ul>
+                        <ul> */}
                           {/* <li>
                             <Link to="/appointments">Appointments</Link>
                           </li> */}
@@ -91,7 +95,7 @@ export default function Header({ logoSrc, variant }) {
                           <li>
                             <Link to="/timetable">Timetable</Link>
                           </li> */}
-                          <li>
+                          {/* <li>
                       <Link to="/about">About</Link>
                     </li>
                           <li>
@@ -107,15 +111,16 @@ export default function Header({ logoSrc, variant }) {
                          
                           <li>
                             <Link to="/doctorsdash">doctor</Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          
+                          {/* <li>
                       <Link to="/contact">Contact</Link>
-                    </li>
-                        </ul>
-                      </DropDown>
+                    </li> */}
+                        {/* </ul> */}
+                      {/* </DropDown>
                     </li>
                     
-                  </ul>
+                  </ul> */}
                   <span
                     className={
                       mobileToggle

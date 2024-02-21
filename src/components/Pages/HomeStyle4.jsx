@@ -88,47 +88,27 @@ const featureListData = [
 ];
 const testimonialData = [
   {
-    text: '"I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease.”',
+    text: 'eynolds thoroughness and expertise made me feel reassured throughout my treatment journey. Highly recommend her for skin health concerns',
     ratingNumber: '5',
     avatarImgUrl: '/images/home_4/avatar_2.png',
-    avatarName: 'Sophia Torres',
+    avatarName: 'Michael K.',
     avatarDesignation: 'New York, USA',
   },
   {
-    text: '"ProHealth has been a game-changer for me. The doctors are caring and highly skilled, and the staff is always friendly and accommodating. We hope for the best wishes.”',
+    text: '"Alex is innovative solutions and attention to detail greatly improved the website is functionality. Exceptional work ethic and communication skills',
     ratingNumber: '5',
     avatarImgUrl: '/images/home_4/avatar_3.png',
-    avatarName: 'John Dupont',
+    avatarName: 'Emma L.',
     avatarDesignation: 'Manhattan, USA',
   },
   {
-    text: '“I had a great experience with ProHealth. The staff were friendly and professional, and the doctor took the time to answer all my questions and address my concerns.”',
+    text: '“Rachel is patience and professionalism in addressing my queries exceeded my expectations. Her assistance made navigating the platform a breeze”',
     ratingNumber: '5',
     avatarImgUrl: '/images/home_4/avatar_4.png',
-    avatarName: 'Allen Duarte',
+    avatarName: ' David S.',
     avatarDesignation: 'California, USA',
   },
-  {
-    text: '"I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease.”',
-    ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_2.png',
-    avatarName: 'Sophia Torres',
-    avatarDesignation: 'New York, USA',
-  },
-  {
-    text: '"ProHealth has been a game-changer for me. The doctors are caring and highly skilled, and the staff is always friendly and accommodating. We hope for the best wishes.”',
-    ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_3.png',
-    avatarName: 'John Dupont',
-    avatarDesignation: 'Manhattan, USA',
-  },
-  {
-    text: '“I had a great experience with ProHealth. The staff were friendly and professional, and the doctor took the time to answer all my questions and address my concerns.”',
-    ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_4.png',
-    avatarName: 'Allen Duarte',
-    avatarDesignation: 'California, USA',
-  },
+ 
 ];
 const pricingData = [
   {
